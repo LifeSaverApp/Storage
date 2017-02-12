@@ -37,8 +37,8 @@ public class Storage {
      @Path("/getQuoteMotivation")
      public Response getQuote() throws ClientProtocolException, IOException {
     	
-     	String ENDPOINT = "http://10.218.200.214:5700/introsde/adapter/getQuote";
-     	//String ENDPOINT = "https://externaladapter.herokuapp.com/introsde/adapter/getQuote";
+     	//String ENDPOINT = "http://10.218.200.214:5700/introsde/adapter/getQuote";
+     	String ENDPOINT = "https://externaladapter.herokuapp.com/introsde/adapter/getQuote";
      	DefaultHttpClient client = new DefaultHttpClient();
      	HttpGet request = new HttpGet(ENDPOINT);
      	HttpResponse response = client.execute(request);
@@ -66,8 +66,8 @@ public class Storage {
      @Path("/getQuoteMotivation2")
      public Response getQuote2() throws ClientProtocolException, IOException {
     	
-     	String ENDPOINT = "http://10.218.200.214:5700/introsde/adapter/getQuote2";
-     	//String ENDPOINT = "https://externaladapter.herokuapp.com/introsde/adapter/getQuote2";
+     	//String ENDPOINT = "http://10.218.200.214:5700/introsde/adapter/getQuote2";
+     	String ENDPOINT = "https://externaladapter.herokuapp.com/introsde/adapter/getQuote2";
      	DefaultHttpClient client = new DefaultHttpClient();
      	HttpGet request = new HttpGet(ENDPOINT);
      	HttpResponse response = client.execute(request);
@@ -95,8 +95,8 @@ public class Storage {
  	@Path("/getPicMotivation")
  	public Response getPicMotivation() throws ClientProtocolException, IOException {
 
- 		//String ENDPOINT = "https://externaladapter.herokuapp.com/introsde/adapter/getPictureUrl";
- 		String ENDPOINT = "http://10.218.200.214:5700/introsde/adapter/getPictureUrl";
+ 		String ENDPOINT = "https://externaladapter.herokuapp.com/introsde/adapter/getPictureUrl";
+ 		//String ENDPOINT = "http://10.218.200.214:5700/introsde/adapter/getPictureUrl";
  		DefaultHttpClient client = new DefaultHttpClient();
  		HttpGet request = new HttpGet(ENDPOINT);
  		HttpResponse response = client.execute(request);
